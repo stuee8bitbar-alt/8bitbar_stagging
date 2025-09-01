@@ -1,0 +1,114 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom Neon Effects */
+@layer utilities {
+  .neon-glow-pink {
+    box-shadow: 0 0 20px rgba(236, 72, 153, 0.5),
+      0 0 40px rgba(236, 72, 153, 0.3);
+  }
+
+  .neon-glow-green {
+    box-shadow: 0 0 20px rgba(34, 197, 94, 0.5), 0 0 40px rgba(34, 197, 94, 0.3);
+  }
+
+  .neon-glow-cyan {
+    box-shadow: 0 0 20px rgba(6, 182, 212, 0.5), 0 0 40px rgba(6, 182, 212, 0.3);
+  }
+
+  .neon-glow-yellow {
+    box-shadow: 0 0 20px rgba(234, 179, 8, 0.5), 0 0 40px rgba(234, 179, 8, 0.3);
+  }
+
+  .neon-text-pink {
+    text-shadow: 0 0 10px rgba(236, 72, 153, 0.8),
+      0 0 20px rgba(236, 72, 153, 0.6);
+  }
+
+  .neon-text-green {
+    text-shadow: 0 0 10px rgba(34, 197, 94, 0.8),
+      0 0 20px rgba(34, 197, 94, 0.6);
+  }
+
+  .neon-text-cyan {
+    text-shadow: 0 0 10px rgba(6, 182, 212, 0.8),
+      0 0 20px rgba(6, 182, 212, 0.6);
+  }
+
+  .neon-text-multicolor {
+    text-shadow: 0 0 10px rgba(236, 72, 153, 0.6),
+      0 0 20px rgba(34, 197, 94, 0.6), 0 0 30px rgba(6, 182, 212, 0.6);
+  }
+}
+
+/* Custom Fonts */
+body {
+  font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto",
+    sans-serif;
+}
+
+/* Pixel-style headings */
+.font-orbitron {
+  font-family: "Orbitron", "Courier New", monospace;
+}
+
+/* Retro gaming font */
+.font-press-start {
+  font-family: "Press Start 2P", "Courier New", monospace;
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Custom scrollbar for dark theme */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #1f2937;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #ec4899;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #db2777;
+}
+
+/* Mobile optimizations */
+@media (max-width: 768px) {
+  /* Reduce gaps on mobile */
+  .py-12 {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+
+  /* Optimize text sizes for mobile */
+  .text-2xl {
+    font-size: 1.5rem;
+  }
+
+  .text-3xl {
+    font-size: 1.875rem;
+  }
+
+  /* Reduce margins on mobile */
+  .mb-6 {
+    margin-bottom: 1rem;
+  }
+
+  .mb-8 {
+    margin-bottom: 1.5rem;
+  }
+
+  /* Optimize button spacing */
+  .gap-3 {
+    gap: 0.75rem;
+  }
+}
