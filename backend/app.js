@@ -33,13 +33,13 @@ const getConfig = () => {
           "https://8bitbar.vercel.app",
           "https://8bitbar-gilt.vercel.app",
           "https://8bitbar-4m5h.vercel.app",
-          "http://15.207.113.121:3000"
+           "https://8bitbar-stagging.vercel.app"
         ]
       : [
           "http://localhost:5173",
           "http://192.168.31.163:5173",
           "https://test.8bitbar.com.au",
-          "http://15.207.113.121:3000"
+          "https://8bitbar-stagging.vercel.app"
         ],
     port: process.env.PORT || 3000,
   };
