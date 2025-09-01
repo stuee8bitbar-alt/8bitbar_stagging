@@ -10,7 +10,7 @@ const getBaseURL = () => {
   }
 
   // Default to development URL
-  return "https://bitbar-backend.onrender.com/api/v1";
+  return "https://eightbitbar-stagging.onrender.com/api/v1";
 };
 
 // Create axios instance with base configuration
