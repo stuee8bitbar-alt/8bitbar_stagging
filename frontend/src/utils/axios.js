@@ -8,7 +8,6 @@ const getBaseURL = () => {
   if (customBaseURL) {
     return customBaseURL;
   }
-
   // Default to development URL
   return "https://eightbitbar-stagging.onrender.com/api/v1";
 };
